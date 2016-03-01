@@ -1,25 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firstAudioPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSO-8b-qVX">
+                                <rect key="frame" x="124" y="170" width="72" height="30"/>
+                                <state key="normal" title="Play Audio"/>
+                                <connections>
+                                    <action selector="PlayAudio1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URm-p6-U3B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="517-ry-FbJ">
+                                <rect key="frame" x="139" y="279" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="PausePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeT-GY-AvJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhZ-Qk-7oc">
+                                <rect key="frame" x="64" y="279" width="46" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meC-hL-Qgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWD-St-UkH">
+                                <rect key="frame" x="210" y="279" width="56" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="Restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03M-dY-RBF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jWD-St-UkH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHc-ke-I3Y"/>
+                            <constraint firstItem="517-ry-FbJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JA8-MW-6vn"/>
+                            <constraint firstItem="uSO-8b-qVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LjH-WV-OE3"/>
+                            <constraint firstItem="517-ry-FbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XZ6-vU-seq"/>
+                            <constraint firstItem="nhZ-Qk-7oc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i2d-2u-HwL"/>
+                            <constraint firstItem="nhZ-Qk-7oc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jMK-3r-cUo"/>
+                            <constraint firstItem="jWD-St-UkH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="noa-cC-Za5"/>
+                            <constraint firstItem="uSO-8b-qVX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yxM-aA-WWQ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="PausePlay" destination="517-ry-FbJ" id="shx-PQ-ppJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="358"/>
         </scene>
     </scenes>
 </document>

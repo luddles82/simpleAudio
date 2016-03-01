@@ -12,6 +12,9 @@
 		CD0F59BA1C860DDF00D2D314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0F59B81C860DDF00D2D314 /* Main.storyboard */; };
 		CD0F59BC1C860DDF00D2D314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0F59BB1C860DDF00D2D314 /* Assets.xcassets */; };
 		CD0F59BF1C860DDF00D2D314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0F59BD1C860DDF00D2D314 /* LaunchScreen.storyboard */; };
+		CD0F59C71C860DFB00D2D314 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0F59C61C860DFB00D2D314 /* AVFoundation.framework */; };
+		CD0F59CA1C860E1600D2D314 /* Main.aiff in Resources */ = {isa = PBXBuildFile; fileRef = CD0F59C81C860E1600D2D314 /* Main.aiff */; };
+		CD0F59CB1C860E1600D2D314 /* Opener.aiff in Resources */ = {isa = PBXBuildFile; fileRef = CD0F59C91C860E1600D2D314 /* Opener.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CD0F59BB1C860DDF00D2D314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0F59BE1C860DDF00D2D314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD0F59C01C860DDF00D2D314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0F59C61C860DFB00D2D314 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD0F59C81C860E1600D2D314 /* Main.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = Main.aiff; path = ../../../Main.aiff; sourceTree = "<group>"; };
+		CD0F59C91C860E1600D2D314 /* Opener.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = Opener.aiff; path = ../../../Opener.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0F59C71C860DFB00D2D314 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,7 @@
 		CD0F59A81C860DDF00D2D314 = {
 			isa = PBXGroup;
 			children = (
+				CD0F59C61C860DFB00D2D314 /* AVFoundation.framework */,
 				CD0F59B31C860DDF00D2D314 /* firstAudioPlayer */,
 				CD0F59B21C860DDF00D2D314 /* Products */,
 			);
@@ -60,6 +68,8 @@
 				CD0F59BB1C860DDF00D2D314 /* Assets.xcassets */,
 				CD0F59BD1C860DDF00D2D314 /* LaunchScreen.storyboard */,
 				CD0F59C01C860DDF00D2D314 /* Info.plist */,
+				CD0F59C81C860E1600D2D314 /* Main.aiff */,
+				CD0F59C91C860E1600D2D314 /* Opener.aiff */,
 			);
 			path = firstAudioPlayer;
 			sourceTree = "<group>";
@@ -123,7 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0F59BF1C860DDF00D2D314 /* LaunchScreen.storyboard in Resources */,
+				CD0F59CB1C860E1600D2D314 /* Opener.aiff in Resources */,
 				CD0F59BC1C860DDF00D2D314 /* Assets.xcassets in Resources */,
+				CD0F59CA1C860E1600D2D314 /* Main.aiff in Resources */,
 				CD0F59BA1C860DDF00D2D314 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
